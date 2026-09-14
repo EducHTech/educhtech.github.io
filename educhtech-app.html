@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr-CA">
 <head>
   <meta charset="UTF-8">
@@ -7,315 +7,171 @@
   <meta name="description" content="ÉducHTech App réunit en un seul endroit la gestion des tâches, le suivi du temps, la documentation pédagogique, la vie d'équipe et la comptabilité des équipes d'ÉducHTech.">
   <link rel="icon" href="./images/cropped-01_CouleurSansTexte-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="./images/cropped-01_CouleurSansTexte-180x180.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-
-  <!-- Navigation -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="./index.html" class="logo-link">
-        <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="Logo ÉducHTech" class="logo-img">
+        <img src="./images/08_LogoTexteCouleurLongTransparentOmbre.png" alt="Logo ÉducHTech" class="logo-img">
       </a>
 
       <button class="mobile-toggle" aria-label="Menu de navigation" aria-expanded="false">☰</button>
 
-      <ul class="nav-menu">
-        <li><a href="./studio.html" class="nav-link">ÉducHTech Studio</a></li>
-        <li><a href="./educhtech-app.html" class="nav-link active">ÉducHTech App</a></li>
-        <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link">Camps & Ateliers</a></li>
-        <li><a href="./les-dragons.html" class="nav-link">Les Dragons</a></li>
+      <ul class="nav-menu">
+        <li><a href="./index.html" class="nav-link">Accueil</a></li>
+        <li><a href="./membres.html" class="nav-link">Membres</a></li>
         <li class="nav-item-dropdown">
-          <a href="#" class="nav-link">Simulateurs</a>
+          <a href="#" class="nav-link active">Applications</a>
           <div class="nav-dropdown-menu">
-            <a href="./simulateur-financement-equipe.html">Financer une équipe</a>
-            <a href="./simulateur-cout-ateliers.html">Coût des ateliers</a>
+            <a href="./studio.html">ÉducHTech Studio</a>
+            <a href="./educhtech-app.html" class="active">ÉducHTech App</a>
           </div>
         </li>
+        <li class="nav-item-dropdown">
+          <a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link">Camps & Ateliers</a>
+          <div class="nav-dropdown-menu">
+            <a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps & Ateliers</a>
+            <a href="./simulateur-financement-equipe.html">Simulateur : financer une équipe</a>
+            <a href="./simulateur-cout-ateliers.html">Simulateur : coût des ateliers</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="./les-dragons.html" class="nav-link">Les Dragons</a>
+          <div class="nav-dropdown-menu">
+            <a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a>
+            <a href="./plongez-au-coeur-de-la-robotique-educative-avec-educhtech-et-les-dragons.html">TEDx Ville-Marie ED 2025</a>
+            <a href="./eureka-2025.html">Eurêka!</a>
+          </div>
+        </li>
+        <li><a href="./partenaire.html" class="nav-link">Partenaires</a></li>
         <li><a href="./contact.html" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero-section">
       <div class="container hero-content">
         <div class="badge">Plateforme interne</div>
         <h1 class="hero-title">
-          Tout ce qu'une équipe de robotique doit gérer, <span class="text-gradient">au même endroit</span>
+          ÉducHTech App : <span class="text-gradient">toute la vie d'une équipe au même endroit</span>
         </h1>
         <p class="hero-subtitle">
-          ÉducHTech App est la plateforme interne utilisée par les équipes d'ÉducHTech. Elle rassemble ce qui
-          faisait auparavant appel à une dizaine d'outils éparpillés : la gestion des tâches, le suivi du temps,
-          la documentation pédagogique, la vie d'équipe et la gestion financière de l'organisme.
+          Une application pensée pour aider les jeunes, les mentors et les responsables à organiser le travail, suivre les progrès et garder une trace claire de ce qui se fait.
         </p>
-        <div class="hero-actions">
-          <a href="#fonctionnalites" class="btn btn-primary">Voir les fonctionnalités</a>
-          <a href="./contact.html" class="btn btn-secondary">Nous contacter</a>
-        </div>
       </div>
     </section>
 
-    <!-- À qui elle s'adresse -->
-    <section class="section section-alt">
+    <section id="essentiel" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <div class="badge badge-green">À qui elle s'adresse</div>
-          <h2 class="section-title">Mentors, élèves et responsables, dans le même outil</h2>
-          <p class="section-desc">
-            Chacun voit ce qui le concerne : l'information est organisée par équipe et par projet.
-          </p>
-        </div>
-
-        <div class="cards-grid-3">
-          <div class="feature-card">
-            <div class="card-icon">🎓</div>
-            <h3 class="card-title">Les élèves</h3>
-            <p class="card-text">
-              Ils y suivent leurs tâches, consultent les tutoriels et documentent leur travail.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">🧭</div>
-            <h3 class="card-title">Les mentors</h3>
-            <p class="card-text">
-              Ils y animent les séances, encadrent les jeunes et suivent leur progression.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="card-icon">🗝️</div>
-            <h3 class="card-title">Les responsables</h3>
-            <p class="card-text">
-              Ils y gèrent les équipes, les comptes et les finances de l'organisme.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fonctionnalités -->
-    <section id="fonctionnalites" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge">Fonctionnalités</div>
-          <h2 class="section-title">Ce que l'application couvre</h2>
-          <p class="section-desc">
-            De la planification d'une tâche jusqu'aux états financiers de l'organisme.
-          </p>
+          <div class="badge badge-green">Objectif</div>
+          <h2 class="section-title">Une équipe plus organisée, plus claire, plus durable</h2>
         </div>
 
         <div class="cards-grid-3">
           <div class="feature-card">
             <div class="card-icon">🗂️</div>
-            <h3 class="card-title">Gestion des tâches</h3>
+            <h3 class="card-title">Planifier le travail</h3>
             <p class="card-text">
-              Un tableau visuel où chaque tâche se déplace d'une colonne à l'autre selon son avancement.
-              On y assigne des membres, une échéance, des étiquettes et des commentaires, et on y suit le temps
-              estimé, investi et restant. Tout le monde voit les mises à jour instantanément.
+              Les tâches sont visibles, assignées et suivies. Chacun sait ce qu'il faut faire, quand, et où l'on en est.
             </p>
           </div>
 
           <div class="feature-card">
             <div class="card-icon">⏱️</div>
-            <h3 class="card-title">Suivi du temps</h3>
+            <h3 class="card-title">Suivre le temps</h3>
             <p class="card-text">
-              Chaque jeune enregistre les heures passées sur ses tâches. Les mentors disposent d'une vue
-              d'ensemble par personne et par période, avec répartition et export — utile autant pour la
-              reconnaissance du travail accompli que pour la gestion administrative.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">📝</div>
-            <h3 class="card-title">Rapports de travail</h3>
-            <p class="card-text">
-              Les jeunes rédigent de courts rapports sur ce qu'ils ont accompli. Chaque rapport devient un
-              document propre et archivé, partagé automatiquement avec l'équipe.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">▶️</div>
-            <h3 class="card-title">Séances de travail guidées</h3>
-            <p class="card-text">
-              Un mentor lance une séance et l'application l'accompagne du début à la fin : présences, tâches
-              travaillées, chronomètre, puis résumé final généré automatiquement et envoyé à l'équipe.
-              Plus besoin de rédiger un compte rendu après coup.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">🧱</div>
-            <h3 class="card-title">Manuels d'assemblage</h3>
-            <p class="card-text">
-              Un constructeur de guides de montage illustrés, étape par étape, dans l'esprit des notices LEGO.
-              Les équipes documentent leurs robots et leurs constructions pour que les prochaines cohortes
-              puissent les reproduire.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">🌳</div>
-            <h3 class="card-title">Tutoriels et arbre des compétences</h3>
-            <p class="card-text">
-              Des tutoriels pas-à-pas en modélisation 3D et en programmation, illustrés d'images et d'animations.
-              Ils sont présentés sous forme d'arbre de compétences, comme dans un jeu vidéo : les jeunes
-              visualisent leur parcours d'apprentissage et ce qu'ils peuvent débloquer ensuite. Chaque tutoriel
-              s'ouvre par un simple lien, à côté du logiciel utilisé.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">📅</div>
-            <h3 class="card-title">Calendrier d'équipe</h3>
-            <p class="card-text">
-              Compétitions, livrables, réunions, ateliers et sorties, ainsi que les anniversaires des membres.
-              L'application prévient à l'avance de ce qui s'en vient.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">🧾</div>
-            <h3 class="card-title">Dépenses et comptabilité</h3>
-            <p class="card-text">
-              Une dépense se déclare en photographiant simplement le reçu depuis son téléphone. Les responsables
-              disposent ensuite d'un registre complet, du suivi par projet et des états financiers de l'organisme,
-              avec les justificatifs rattachés.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">⚙️</div>
-            <h3 class="card-title">Administration</h3>
-            <p class="card-text">
-              Gestion des comptes, des rôles et des équipes, pour garder l'organisation à jour à mesure que les
-              cohortes changent.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Avantages -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <div class="badge badge-orange">Les avantages</div>
-          <h2 class="section-title">Pourquoi ça change le quotidien d'une équipe</h2>
-        </div>
-
-        <div class="cards-grid-3">
-          <div class="feature-card">
-            <div class="card-icon">📦</div>
-            <h3 class="card-title">Tout au même endroit</h3>
-            <p class="card-text">
-              Une seule application au lieu d'une dizaine d'outils dispersés. Moins de temps perdu à chercher
-              l'information, moins de choses qui tombent entre deux chaises.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">✨</div>
-            <h3 class="card-title">Pensée pour des jeunes</h3>
-            <p class="card-text">
-              L'interface est simple, visuelle et agréable à utiliser. L'arbre des tutoriels transforme
-              l'apprentissage en progression motivante plutôt qu'en liste de documents.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">⌛</div>
-            <h3 class="card-title">Du temps rendu aux mentors</h3>
-            <p class="card-text">
-              Les résumés de séance, les rapports et les rappels se génèrent automatiquement. Les mentors passent
-              leur temps avec les jeunes plutôt que dans la paperasse.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">🧠</div>
-            <h3 class="card-title">La mémoire de l'organisation</h3>
-            <p class="card-text">
-              Manuels, tutoriels, rapports et résumés de séance restent accessibles d'une année à l'autre.
-              Le savoir-faire ne repart pas avec les finissants.
+              Les jeunes documentent leur travail et les mentors ont une vue plus claire du temps investi et des progrès.
             </p>
           </div>
 
           <div class="feature-card">
             <div class="card-icon">💼</div>
-            <h3 class="card-title">Une vraie expérience professionnelle</h3>
+            <h3 class="card-title">Gérer la réalité de l'organisation</h3>
             <p class="card-text">
-              Les jeunes y apprennent à planifier leur travail, à suivre leur temps et à documenter ce qu'ils
-              font — les mêmes réflexes que dans une véritable équipe technique.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">🔍</div>
-            <h3 class="card-title">Transparence et suivi</h3>
-            <p class="card-text">
-              Chacun sait qui fait quoi et où en est le projet. Les responsables ont un portrait clair de
-              l'avancement, de la charge de travail et des finances, en tout temps.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="card-icon">📱</div>
-            <h3 class="card-title">Accessible partout</h3>
-            <p class="card-text">
-              Depuis un ordinateur à l'atelier ou un téléphone en compétition, avec les mêmes informations à jour
-              pour tout le monde au même moment.
+              Calendrier, comptes, dépenses et documentation sont centralisés pour éviter que l'équipe se disperse dans plusieurs outils.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section" style="text-align: center;">
-      <div class="container" style="max-width: 700px;">
-        <h2 class="section-title">Une question sur ÉducHTech App ?</h2>
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Pourquoi c'est utile</div>
+          <h2 class="section-title">Une plateforme qui soutient le travail collectif</h2>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">👩‍🎓</div>
+            <h3 class="card-title">Pour les jeunes</h3>
+            <p class="card-text">
+              Un espace pour organiser les tâches, suivre le travail et comprendre le rythme d'une équipe technique.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🧭</div>
+            <h3 class="card-title">Pour les mentors</h3>
+            <p class="card-text">
+              Un suivi plus fluide des séances, du développement et de l'avancement de chacun.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">📊</div>
+            <h3 class="card-title">Pour les responsables</h3>
+            <p class="card-text">
+              Un regard plus clair sur les dépenses, les rôles, les projets et la santé globale de l'organisation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" style="text-align: center;">
+      <div class="container" style="max-width: 720px;">
+        <h2 class="section-title">Le message fondamental</h2>
         <p class="section-desc" style="margin-bottom: 2rem;">
-          L'application est l'outil interne des équipes d'ÉducHTech. Écrivez-nous pour en savoir plus sur son
-          fonctionnement ou sur la façon dont elle soutient nos équipes.
+          ÉducHTech App n'est pas seulement un outil interne. C'est une manière de faire vivre une équipe de robotique avec plus de rigueur, plus de clarté et plus de continuité.
         </p>
         <a href="./contact.html" class="btn btn-primary">Nous contacter</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+        <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="ÉducHTech" style="height: 36px;">
-          <p>
-            OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.
-          </p>
+          <img src="./images/08_LogoTexteCouleurLongTransparentOmbre.png" alt="ÉducHTech" style="height: 36px;">
+          <p>OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.</p>
         </div>
         <div>
           <h4 class="footer-title">Plateforme</h4>
           <ul class="footer-links">
             <li><a href="./studio.html">ÉducHTech Studio</a></li>
             <li><a href="./educhtech-app.html">ÉducHTech App</a></li>
-            <li><a href="./studio.html#backlog">Feuille de route</a></li>
-            <li><a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener">Projet Par et Pour</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-title">Activités</h4>
           <ul class="footer-links">
             <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps de robotique</a></li>
-            <li><a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a></li>
             <li><a href="./les-dragons.html">Les Dragons</a></li>
-            <li><a href="./simulateur-financement-equipe.html">Simulateur : financer une équipe</a></li>
-            <li><a href="./simulateur-cout-ateliers.html">Simulateur : coût des ateliers</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-title">Organisation</h4>
           <ul class="footer-links">
+            <li><a href="./membres.html">Membres</a></li>
             <li><a href="./partenaire.html">Partenaires</a></li>
             <li><a href="./contact.html">Contact & Réservations</a></li>
           </ul>
@@ -330,3 +186,4 @@
   <script src="./js/main.js"></script>
 </body>
 </html>
+

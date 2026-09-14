@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr-CA">
 <head>
   <meta charset="UTF-8">
@@ -15,23 +15,38 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="./index.html" class="logo-link">
-        <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="Logo ÉducHTech" class="logo-img">
+        <img src="./images/08_LogoTexteCouleurLongTransparentOmbre.png" alt="Logo ÉducHTech" class="logo-img">
       </a>
       
       <button class="mobile-toggle" aria-label="Menu de navigation" aria-expanded="false">☰</button>
 
-      <ul class="nav-menu">
-        <li><a href="./studio.html" class="nav-link">ÉducHTech Studio</a></li>
-        <li><a href="./educhtech-app.html" class="nav-link">ÉducHTech App</a></li>
-        <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link active">Camps & Ateliers</a></li>
-        <li><a href="./les-dragons.html" class="nav-link">Les Dragons</a></li>
+      <ul class="nav-menu">
+        <li><a href="./index.html" class="nav-link">Accueil</a></li>
+        <li><a href="./membres.html" class="nav-link">Membres</a></li>
         <li class="nav-item-dropdown">
-          <a href="#" class="nav-link">Simulateurs</a>
+          <a href="#" class="nav-link">Applications</a>
           <div class="nav-dropdown-menu">
-            <a href="./simulateur-financement-equipe.html">Financer une équipe</a>
-            <a href="./simulateur-cout-ateliers.html">Coût des ateliers</a>
+            <a href="./studio.html">ÉducHTech Studio</a>
+            <a href="./educhtech-app.html">ÉducHTech App</a>
           </div>
         </li>
+        <li class="nav-item-dropdown">
+          <a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link active">Camps & Ateliers</a>
+          <div class="nav-dropdown-menu">
+            <a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps & Ateliers</a>
+            <a href="./simulateur-financement-equipe.html">Simulateur : financer une équipe</a>
+            <a href="./simulateur-cout-ateliers.html">Simulateur : coût des ateliers</a>
+          </div>
+        </li>
+        <li class="nav-item-dropdown">
+          <a href="./les-dragons.html" class="nav-link">Les Dragons</a>
+          <div class="nav-dropdown-menu">
+            <a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a>
+            <a href="./plongez-au-coeur-de-la-robotique-educative-avec-educhtech-et-les-dragons.html">TEDx Ville-Marie ED 2025</a>
+            <a href="./eureka-2025.html">Eurêka!</a>
+          </div>
+        </li>
+        <li><a href="./partenaire.html" class="nav-link">Partenaires</a></li>
         <li><a href="./contact.html" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -46,7 +61,7 @@
           Camps & Ateliers : <span class="text-gradient">Apprendre en créant</span>
         </h1>
         <p class="hero-subtitle">
-          Une formule testée sur le terrain pour initier les jeunes de 8 à 14 ans aux STIM, animée par des étudiants des Dragons et accompagnée par des mentors expérimentés.
+          Une formule testée sur le terrain pour initier les jeunes de 6 à 12 ans aux STIM, animée par des étudiants des Dragons et accompagnée par des mentors expérimentés.
         </p>
       </div>
     </section>
@@ -124,6 +139,38 @@
       </div>
     </section>
 
+    <section class="section section-alt" style="text-align: center;">
+      <div class="container" style="max-width: 900px;">
+        <div class="section-header">
+          <div class="badge">Simulateurs utiles</div>
+          <h2 class="section-title">Estimer rapidement les besoins et les coûts</h2>
+          <p class="section-desc">
+            Ces outils donnent un premier cadre pour planifier le financement d'une équipe ou le coût d'un atelier selon la durée, le nombre de participants et l'intensité de la mission pédagogique.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">💰</div>
+            <h3 class="card-title">Financer une équipe</h3>
+            <p class="card-text">
+              Évaluez les besoins liés au matériel, à l'encadrement, au mentorat et aux déplacements d'une équipe de robotique.
+            </p>
+            <p style="margin-top: 1rem;"><a href="./simulateur-financement-equipe.html" class="btn btn-secondary">Ouvrir le simulateur</a></p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">📊</div>
+            <h3 class="card-title">Coût des ateliers</h3>
+            <p class="card-text">
+              Préparez une estimation pour un camp ou une série d'ateliers avec un nombre de participants et un calendrier donnés.
+            </p>
+            <p style="margin-top: 1rem;"><a href="./simulateur-cout-ateliers.html" class="btn btn-secondary">Ouvrir le simulateur</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- For Schools & Camps -->
     <section class="section section-alt" style="text-align: center;">
       <div class="container" style="max-width: 700px;">
@@ -136,35 +183,31 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+        <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="ÉducHTech" style="height: 36px;">
-          <p>
-            OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.
-          </p>
+          <img src="./images/08_LogoTexteCouleurLongTransparentOmbre.png" alt="ÉducHTech" style="height: 36px;">
+          <p>OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.</p>
         </div>
         <div>
           <h4 class="footer-title">Plateforme</h4>
           <ul class="footer-links">
             <li><a href="./studio.html">ÉducHTech Studio</a></li>
             <li><a href="./educhtech-app.html">ÉducHTech App</a></li>
-            <li><a href="./studio.html#backlog">Feuille de route</a></li>
-            <li><a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener">Projet Par et Pour</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-title">Activités</h4>
           <ul class="footer-links">
             <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps de robotique</a></li>
-            <li><a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a></li>
             <li><a href="./les-dragons.html">Les Dragons</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-title">Organisation</h4>
           <ul class="footer-links">
+            <li><a href="./membres.html">Membres</a></li>
             <li><a href="./partenaire.html">Partenaires</a></li>
             <li><a href="./contact.html">Contact & Réservations</a></li>
           </ul>
