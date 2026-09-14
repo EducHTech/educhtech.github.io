@@ -43,25 +43,151 @@ var NeveProperties = {"ajaxurl":"http:\/\/localhost:10005\/wp-admin\/admin-ajax.
 					picture.sizes = variants[compId]['light']['sizes'];
 					continue;
 				};
-				picture.src = variants[compId]['dark']['src'];
-				picture.srcset = variants[compId]['dark']['srcset'] || '';
-				picture.sizes = variants[compId]['dark']['sizes'];
-			};
-		};
-	};
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Mini-FTC des Dragons | ÉducHTech</title>
+  <meta name="description" content="Découvrez le Mini-FTC, une compétition robotique accessible conçue par Les Dragons pour réutiliser le matériel existant (EV3, LEGO) et initier les jeunes.">
+  <link rel="icon" href="./images/cropped-01_CouleurSansTexte-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./images/cropped-01_CouleurSansTexte-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
 
-	var observer = new MutationObserver(function(mutations) {
-		mutations.forEach(function(mutation) {
-			if (mutation.type == 'attributes') {
-				theme = html.getAttribute('data-neve-theme');
-				setCurrentTheme(theme);
-			};
-		});
-	});
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="logo-link">
+        <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="Logo ÉducHTech" class="logo-img">
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Menu de navigation" aria-expanded="false">☰</button>
 
-	observer.observe(html, {
-		attributes: true
-	});
-function toggleAriaClick() { function toggleAriaExpanded(toggle = 'true') { document.querySelectorAll('button.navbar-toggle').forEach(function(el) { if ( el.classList.contains('caret-wrap') ) { return; } el.setAttribute('aria-expanded', 'true' === el.getAttribute('aria-expanded') ? 'false' : toggle); }); } toggleAriaExpanded(); if ( document.body.hasAttribute('data-ftrap-listener') ) { return; } document.body.setAttribute('data-ftrap-listener', 'true'); document.addEventListener('ftrap-end', function() { toggleAriaExpanded('false'); }); }
-var menuCarets=document.querySelectorAll(".nav-ul li > .wrap > .caret");menuCarets.forEach(function(e){e.addEventListener("keydown",e=>{13===e.keyCode&&(e.target.parentElement.classList.toggle("active"),e.target.getAttribute("aria-pressed")&&e.target.setAttribute("aria-pressed","true"===e.target.getAttribute("aria-pressed")?"false":"true"))}),e.parentElement.parentElement.addEventListener("focusout",t=>{!e.parentElement.parentElement.contains(t.relatedTarget)&&(e.parentElement.classList.remove("active"),e.setAttribute("aria-pressed","false"))})});
-</script> </body>  </html>
+      <ul class="nav-menu">
+        <li><a href="./studio.html" class="nav-link">ÉducHTech Studio</a></li>
+        <li><a href="./educhtech-app.html" class="nav-link">ÉducHTech App</a></li>
+        <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link">Camps & Ateliers</a></li>
+        <li><a href="./les-dragons.html" class="nav-link">Les Dragons</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-link">Simulateurs</a>
+          <div class="nav-dropdown-menu">
+            <a href="./simulateur-financement-equipe.html">Financer une équipe</a>
+            <a href="./simulateur-cout-ateliers.html">Coût des ateliers</a>
+          </div>
+        </li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="badge badge-orange">Innovation Compétitive Ouverte</div>
+        <h1 class="hero-title">
+          Le Mini-FTC : <span class="text-gradient">La robotique compétitive pour tous</span>
+        </h1>
+        <p class="hero-subtitle">
+          Une initiative créée par Les Dragons pour combler le fossé entre les ensembles pédagogiques de base et les tournois internationaux coûteux.
+        </p>
+      </div>
+    </section>
+
+    <!-- Presentation Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split-layout">
+          <div>
+            <div class="badge">Le Concept</div>
+            <h2 class="section-title" style="margin-top: 0.75rem;">Pourquoi le Mini-FTC ?</h2>
+            <p class="section-desc" style="margin-bottom: 1.25rem;">
+              Pour une école qui commence la robotique, passer directement à une ligue officielle FIRST Tech Challenge (FTC) représente un investissement financier et logistique important.
+            </p>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              Le <strong>Mini-FTC</strong> est un format allégé et hautement formateur développé par notre équipe pour permettre à des jeunes de 9 à 15 ans d'expérimenter la frénésie d'un match robotique sur un terrain compact, tout en recyclant des pièces et moteurs LEGO MINDSTORMS EV3 ou SPIKE déjà en possession des écoles.
+            </p>
+            <ul class="phase-features" style="margin-top: 1rem;">
+              <li>Terrain modulable et transportable pour les gymnases et classes</li>
+              <li>Défis de manipulation d'objets, franchissement d'obstacles et précision</li>
+              <li>Parties en semi-coopération et alliances stratégiques</li>
+              <li>Programmation assistée via <strong>ÉducHTech Studio</strong></li>
+            </ul>
+          </div>
+          <div class="split-image-container">
+            <img src="./images/2024-12-BaseMiniFtc-300x218.png" alt="Robot Mini-FTC">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Par et Pour -->
+    <section class="section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-image-container">
+            <img src="./images/2024-12-ZoomTerrain-286x300.png" alt="Terrain de jeu Mini-FTC">
+          </div>
+          <div>
+            <div class="badge badge-green">Preuve de Concept Open Source</div>
+            <h2 class="section-title" style="margin-top: 0.75rem;">L'Initiative « Par et Pour »</h2>
+            <p class="section-desc" style="margin-bottom: 1.25rem;">
+              Le projet Par et Pour (<a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener">ppcj.educhtech.org</a>) a permis de documenter en accès libre les plans de construction, les défis de jeu et les guides d'ateliers créés par les jeunes pour la relève.
+            </p>
+            <p class="card-text">
+              Ce format constitue le banc d'essai parfait pour tester les nouvelles fonctionnalités d'ÉducHTech Studio et former la relève des futurs ingénieurs du Québec.
+            </p>
+            <div style="margin-top: 1.5rem;">
+              <a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener" class="btn btn-secondary">Visiter le portail Par et Pour ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="ÉducHTech" style="height: 36px;">
+          <p>
+            OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Plateforme</h4>
+          <ul class="footer-links">
+            <li><a href="./studio.html">ÉducHTech Studio</a></li>
+            <li><a href="./educhtech-app.html">ÉducHTech App</a></li>
+            <li><a href="./studio.html#backlog">Feuille de route</a></li>
+            <li><a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener">Projet Par et Pour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Activités</h4>
+          <ul class="footer-links">
+            <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps de robotique</a></li>
+            <li><a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a></li>
+            <li><a href="./les-dragons.html">Les Dragons</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Organisation</h4>
+          <ul class="footer-links">
+            <li><a href="./partenaire.html">Partenaires</a></li>
+            <li><a href="./contact.html">Contact & Réservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ÉducHTech. Tous droits réservés. Conçu avec passion à Montréal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

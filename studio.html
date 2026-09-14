@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉducHTech Studio | Programmer un robot de compétition avec des blocs</title>
+  <meta name="description" content="ÉducHTech Studio réunit dans une seule fenêtre la programmation par blocs, l'envoi au robot et le pilotage. Trois niveaux, de 6 à 17 ans, avec simulation intégrée.">
+  <link rel="icon" href="./images/cropped-01_CouleurSansTexte-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="./images/cropped-01_CouleurSansTexte-180x180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./index.html" class="logo-link">
+        <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="Logo ÉducHTech" class="logo-img">
+      </a>
+      
+      <button class="mobile-toggle" aria-label="Menu de navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-menu">
+        <li><a href="./studio.html" class="nav-link active">ÉducHTech Studio</a></li>
+        <li><a href="./educhtech-app.html" class="nav-link">ÉducHTech App</a></li>
+        <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html" class="nav-link">Camps & Ateliers</a></li>
+        <li><a href="./les-dragons.html" class="nav-link">Les Dragons</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#" class="nav-link">Simulateurs</a>
+          <div class="nav-dropdown-menu">
+            <a href="./simulateur-financement-equipe.html">Financer une équipe</a>
+            <a href="./simulateur-cout-ateliers.html">Coût des ateliers</a>
+          </div>
+        </li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="container hero-content">
+        <div class="badge">Application pour ordinateur</div>
+        <h1 class="hero-title">
+          Programmer un robot de compétition <span class="text-gradient">en assemblant des blocs</span>
+        </h1>
+        <p class="hero-subtitle">
+          ÉducHTech Studio permet à des jeunes de programmer un robot sans écrire une seule ligne de texte.
+          Construire le programme, l'envoyer au robot et le piloter : tout se fait depuis le même écran.
+        </p>
+        <div class="hero-actions">
+          <a href="#fonctionnalites" class="btn btn-primary">Voir les fonctionnalités</a>
+          <a href="./contact.html" class="btn btn-secondary">Nous contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Une seule fenêtre -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="split-layout">
+          <div>
+            <div class="badge badge-orange">Une seule fenêtre</div>
+            <h2 class="section-title" style="margin-top: 0.75rem;">Fini de jongler entre trois logiciels</h2>
+            <p class="section-desc" style="margin-bottom: 1.25rem;">
+              Jusqu'ici, faire bouger un robot demandait de passer d'un outil à l'autre : un pour écrire le
+              programme, un autre pour l'envoyer au robot, un troisième pour le piloter pendant un match.
+              Le Studio réunit tout cela au même endroit.
+            </p>
+            <p class="card-text" style="margin-bottom: 1rem;">
+              L'application grandit avec le jeune, en lui donnant accès à des outils de plus en plus complets
+              à mesure qu'il progresse. Elle a été conçue pour les clubs, les ateliers et les camps de robotique,
+              là où le temps est court et où l'on veut que les jeunes passent leur énergie sur le robot plutôt
+              que sur l'ordinateur.
+            </p>
+          </div>
+          <div class="split-image-container" style="background: var(--bg-card); padding: 1.5rem; display: flex; align-items: center; justify-content: center;">
+            <img src="./images/2024-12-KioskIA.png" alt="Interface d'ÉducHTech Studio" style="border-radius: var(--radius-sm); max-height: 400px; object-fit: contain;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À qui elle s'adresse -->
+    <section id="niveaux" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">À qui elle s'adresse</div>
+          <h2 class="section-title">Trois niveaux, de 6 à 17 ans</h2>
+          <p class="section-desc">
+            Le niveau se choisit projet par projet : chacun travaille avec une interface à sa mesure.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">🥚</div>
+            <h3 class="card-title">Dragonneau — 6 à 8 ans</h3>
+            <p class="card-text">
+              Les premiers pas. Les enfants glissent des actions déjà prêtes sur les boutons d'une manette et
+              composent une courte routine que le robot exécutera tout seul. Tout ce qui est trop abstrait pour
+              leur âge est simplement absent de l'écran.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🐉</div>
+            <h3 class="card-title">Dragonnier — 9 à 11 ans</h3>
+            <p class="card-text">
+              Ils apprennent à créer leurs propres actions plutôt que d'utiliser seulement celles fournies.
+              Ils découvrent les capteurs du robot, les conditions (« si… alors… ») et les répétitions.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🏆</div>
+            <h3 class="card-title">Dragons — 12 à 17 ans</h3>
+            <p class="card-text">
+              Ils préparent la compétition. Tous les outils sont débloqués, y compris la possibilité de voir le
+              programme réel que l'application écrit à partir de leurs blocs — une passerelle naturelle vers la
+              programmation traditionnelle.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🧭</div>
+            <h3 class="card-title">Mentors, animateurs et enseignants</h3>
+            <p class="card-text">
+              Ils encadrent plusieurs jeunes à la fois : ils choisissent le niveau de chaque projet, s'appuient
+              sur les exemples fournis pour lancer une activité, surveillent le robot en direct et gardent en
+              tout temps la possibilité de l'arrêter.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🏫</div>
+            <h3 class="card-title">Organismes et écoles</h3>
+            <p class="card-text">
+              Ils déploient l'application sur les postes de leurs locaux et l'utilisent comme socle commun pour
+              toutes leurs activités de robotique, du primaire au secondaire.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="fonctionnalites" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Fonctionnalités</div>
+          <h2 class="section-title">Ce que le Studio permet de faire</h2>
+          <p class="section-desc">
+            De l'assemblage du premier bloc jusqu'au poste de pilotage d'un match.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">🧩</div>
+            <h3 class="card-title">Programmer en assemblant des blocs</h3>
+            <p class="card-text">
+              Le jeune construit son programme en glissant des blocs les uns dans les autres, comme des pièces
+              de casse-tête. Chaque bloc correspond à quelque chose de concret : faire avancer le robot, ouvrir
+              une pince, lire un capteur, attendre un instant. Les blocs qui ne vont pas ensemble refusent tout
+              simplement de s'emboîter, ce qui évite une bonne partie des erreurs de départ. Le jeune regroupe
+              ensuite ses blocs en « actions » qu'il nomme lui-même et réutilise partout dans son projet.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🪜</div>
+            <h3 class="card-title">Trois niveaux adaptés à l'âge</h3>
+            <p class="card-text">
+              Au moment de créer un projet, on choisit Dragonneau, Dragonnier ou Dragons. Ce choix détermine ce
+              qui apparaît à l'écran : les plus jeunes voient une palette volontairement réduite, les plus grands
+              ont accès à l'ensemble des possibilités. Un même club peut donc faire travailler côte à côte des
+              enfants d'âges très différents sur le même robot.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🎮</div>
+            <h3 class="card-title">Associer des actions à la manette</h3>
+            <p class="card-text">
+              Un onglet montre le dessin d'une manette de jeu. Le jeune clique sur un bouton et choisit l'action
+              que le robot devra faire quand on appuiera dessus. Deux manettes sont gérées, une pour le pilote et
+              une pour le copilote, comme dans une vraie équipe de compétition. C'est visuel et immédiat : aucune
+              configuration à écrire.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">Préparer la phase autonome</h3>
+            <p class="card-text">
+              Un second onglet sert à composer la séquence que le robot exécutera entièrement seul, sans personne
+              aux commandes — une étape classique des compétitions de robotique. Le jeune y empile ses actions
+              dans l'ordre voulu et peut limiter la durée de chacune. Le résultat se teste ensuite en un clic.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🕹️</div>
+            <h3 class="card-title">Le poste de pilotage</h3>
+            <p class="card-text">
+              Une barre de commande, toujours visible, reproduit le poste de pilotage d'une véritable compétition :
+              un chronomètre, le choix entre le mode piloté, le mode autonome et un mode d'essai, un bouton de
+              démarrage et un gros bouton d'arrêt d'urgence. Le chronomètre coupe automatiquement le robot à la
+              fin du temps réglementaire, et le robot s'arrête aussi de lui-même si l'ordinateur perd le contact.
+              L'arrêt d'urgence reste accessible à tout moment, y compris au clavier.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">📡</div>
+            <h3 class="card-title">Se connecter au robot sans fil</h3>
+            <p class="card-text">
+              Un bouton de connexion cherche les robots à proximité et affiche la liste de ceux qu'il trouve.
+              Un clic suffit pour s'y relier. L'application se souvient du dernier robot utilisé et propose de
+              s'y reconnecter directement à la session suivante, ce qui évite de recommencer la recherche à
+              chaque atelier.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🖥️</div>
+            <h3 class="card-title">Travailler sans robot</h3>
+            <p class="card-text">
+              Tout fonctionne aussi sans robot physique. Le jeune peut écrire son programme, le lancer, appuyer
+              sur les boutons de sa manette et voir les réactions s'afficher à l'écran. C'est utile quand il y a
+              plus d'enfants que de robots, quand le robot est en réparation, ou tout simplement pour préparer
+              son programme à la maison.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">📊</div>
+            <h3 class="card-title">Voir ce que fait le robot en direct</h3>
+            <p class="card-text">
+              Un tableau de bord affiche, seconde après seconde, ce qui se passe réellement : la vitesse des
+              moteurs, la valeur des capteurs, l'état de la connexion, ainsi que toute information que le jeune
+              a choisi d'y envoyer lui-même. C'est ce qui permet de comprendre pourquoi le robot ne fait pas ce
+              qu'on attendait, plutôt que de deviner.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">💾</div>
+            <h3 class="card-title">Sauvegarder et partir d'un exemple</h3>
+            <p class="card-text">
+              Chaque projet se sauvegarde sous le nom choisi par le jeune et se retrouve sur la page d'accueil,
+              avec une pastille de couleur indiquant son niveau. L'application avertit avant de quitter un travail
+              non sauvegardé. Une bibliothèque d'exemples prêts à l'emploi, différents selon le niveau, permet de
+              démarrer une activité en quelques secondes plutôt que de partir d'une page blanche.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">💬</div>
+            <h3 class="card-title">Des erreurs écrites pour des enfants</h3>
+            <p class="card-text">
+              Quand quelque chose cloche, l'application n'affiche pas un message technique incompréhensible :
+              elle explique le problème en français simple et suggère la correction. Par exemple, si deux actions
+              portent le même nom, elle le dit clairement et indique où renommer l'une des deux. Des retours
+              sonores signalent également les moments clés : robot connecté, programme prêt, erreur détectée.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🎛️</div>
+            <h3 class="card-title">Une interface qui s'adapte</h3>
+            <p class="card-text">
+              Chaque panneau d'information peut être affiché ou masqué d'un raccourci, ce qui laisse tout l'écran
+              à la zone de construction quand on n'en a pas besoin. L'application propose un affichage clair ou
+              sombre, et retient les préférences d'une séance à l'autre.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Avantages -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-green">Les avantages</div>
+          <h2 class="section-title">Ce que ça change pour un club</h2>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">📈</div>
+            <h3 class="card-title">Un seul outil pour toute la progression</h3>
+            <p class="card-text">
+              Un enfant qui commence à 7 ans utilisera exactement la même application à 15 ans, avec simplement
+              plus d'outils débloqués. Pas de rupture, pas de nouveau logiciel à réapprendre au moment où il
+              devient plus autonome. Ce qu'il a construit petit reste lisible et réutilisable plus tard, et le
+              passage vers la programmation « pour vrai » se fait progressivement, sans mur à franchir.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🔓</div>
+            <h3 class="card-title">Les jeunes avancent sans attendre un adulte</h3>
+            <p class="card-text">
+              Les erreurs sont expliquées en mots qu'ils comprennent et les blocs empêchent une grande partie des
+              fautes classiques. Un jeune bloqué peut souvent se débloquer seul, corriger et réessayer. Cette
+              autonomie change l'ambiance d'un atelier : au lieu de faire la file pour poser une question, les
+              équipes travaillent en parallèle.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">⏱️</div>
+            <h3 class="card-title">Plus de robotique, moins d'informatique</h3>
+            <p class="card-text">
+              L'installation se fait en une fois et l'application est complète dès le départ : rien d'autre à
+              installer ni à configurer. Une fois installée, elle fonctionne même sans connexion Internet. Pour
+              un mentor, une séance de deux heures en reste une, au lieu de se transformer en dépannage technique
+              sur cinq postes différents.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">👥</div>
+            <h3 class="card-title">Chaque jeune travaille, même sans robot</h3>
+            <p class="card-text">
+              Le matériel coûte cher et un club en possède rarement autant que de participants. Comme tout
+              fonctionne aussi en simulation, les équipes préparent et testent leur programme en attendant leur
+              tour sur le vrai robot. On double ou triple ainsi le nombre de jeunes réellement actifs pour le
+              même matériel, et personne ne passe la séance à regarder les autres.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🧒</div>
+            <h3 class="card-title">Un même robot pour des âges très différents</h3>
+            <p class="card-text">
+              Un club accueille souvent des fratries, des groupes multi-âges ou des débutants qui rejoignent une
+              équipe en cours d'année. Comme le niveau se choisit projet par projet, un enfant de 7 ans et un
+              adolescent de 15 ans peuvent partager le même robot et la même séance. L'animateur n'a pas à
+              préparer deux activités séparées.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🛑</div>
+            <h3 class="card-title">La sécurité reste du côté des encadrants</h3>
+            <p class="card-text">
+              Le robot ne démarre que lorsqu'on le lui demande, s'arrête tout seul à la fin du temps prévu, se
+              coupe si la connexion est perdue, et un bouton d'arrêt d'urgence reste accessible en permanence.
+              Les adultes gardent la maîtrise de la machine, ce qui permet de laisser les jeunes expérimenter
+              sans crainte — et l'expérimentation est précisément ce qui les fait progresser.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🥇</div>
+            <h3 class="card-title">Une vraie préparation à la compétition</h3>
+            <p class="card-text">
+              Les jeunes ne s'entraînent pas sur une version simplifiée du réel : ils retrouvent le poste de
+              pilotage, le chronomètre, la phase autonome, la répartition pilote-copilote et le déroulement d'un
+              match. Le jour de la compétition, rien n'est inconnu. Pour l'organisme, cela se traduit par des
+              équipes mieux préparées et par des jeunes qui vivent l'événement avec confiance plutôt qu'avec
+              stress.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🏛️</div>
+            <h3 class="card-title">Un socle durable pour l'organisme</h3>
+            <p class="card-text">
+              Plutôt que d'entretenir plusieurs outils dépareillés, l'organisme s'appuie sur une base unique, en
+              français, à son image. Les exemples et les activités créés une fois servent à tous les groupes,
+              année après année, et les programmes des jeunes sont conservés d'une séance à l'autre. Former un
+              nouveau bénévole devient beaucoup plus rapide : il n'y a qu'une seule application à connaître.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feuille de route -->
+    <section id="backlog" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-orange">Feuille de route</div>
+          <h2 class="section-title">Ce qui s'en vient</h2>
+          <p class="section-desc">
+            Ces axes font partie de notre développement à venir. Ils ne sont pas encore disponibles dans
+            l'application.
+          </p>
+        </div>
+
+        <div class="cards-grid-3">
+          <div class="feature-card">
+            <div class="card-icon">🔧</div>
+            <h3 class="card-title">Davantage de robots supportés</h3>
+            <p class="card-text">
+              Étudier le support de LEGO SPIKE et EV3, de mBot, de l'ÉducHTech Bot V2, puis du matériel REV (FTC)
+              et RoboRIO (FRC) — pour que les écoles puissent réutiliser les robots qu'elles possèdent déjà.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">💻</div>
+            <h3 class="card-title">Multiplateforme</h3>
+            <p class="card-text">
+              Évaluer les besoins sur Chromebook, iPad, Android, macOS et Linux, afin que le choix du parc
+              informatique d'une école ne devienne pas une nouvelle barrière.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon">🌐</div>
+            <h3 class="card-title">Simulation 3D et extensions</h3>
+            <p class="card-text">
+              Explorer un environnement 3D complet, l'importation de robots conçus en CAO et une architecture de
+              plugins ouverte permettant à la communauté d'étendre l'application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section" style="text-align: center;">
+      <div class="container" style="max-width: 700px;">
+        <h2 class="section-title">Envie d'essayer le Studio dans votre milieu ?</h2>
+        <p class="section-desc" style="margin-bottom: 2rem;">
+          Écoles, clubs, camps et organismes : écrivez-nous pour découvrir comment ÉducHTech Studio peut
+          soutenir vos activités de robotique.
+        </p>
+        <a href="./contact.html" class="btn btn-primary">Nous contacter</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./images/2024-10-06_LogoTexteCouleurLong-300x71.png" alt="ÉducHTech" style="height: 36px;">
+          <p>
+            OBNL québécois d'éducation technologique et de robotique circulaire. Par les jeunes, pour les jeunes.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Plateforme</h4>
+          <ul class="footer-links">
+            <li><a href="./studio.html">ÉducHTech Studio</a></li>
+            <li><a href="./educhtech-app.html">ÉducHTech App</a></li>
+            <li><a href="#backlog">Feuille de route</a></li>
+            <li><a href="https://ppcj.educhtech.org/" target="_blank" rel="noopener">Projet Par et Pour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Activités</h4>
+          <ul class="footer-links">
+            <li><a href="./camp-de-jour-2025-2026-decouvrez-la-robotique-avec-educhtech-et-les-dragons.html">Camps de robotique</a></li>
+            <li><a href="./le-mini-ftc-des-dragons.html">Mini-FTC</a></li>
+            <li><a href="./les-dragons.html">Les Dragons</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Organisation</h4>
+          <ul class="footer-links">
+            <li><a href="./partenaire.html">Partenaires</a></li>
+            <li><a href="./contact.html">Contact & Réservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ÉducHTech. Tous droits réservés. Conçu avec passion à Montréal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
