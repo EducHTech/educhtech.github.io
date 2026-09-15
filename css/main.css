@@ -819,58 +819,166 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
 }
 
 /* ==========================================================================
-   Requêtes responsives
+   Navigation mobile
    ========================================================================== */
 @media (max-width: 900px) {
-  .nav-menu { display: none; }
+
+  /* Menu principal */
+  .nav-menu {
+    display: none;
+  }
+
   .nav-menu.open {
     display: flex;
     flex-direction: column;
+
     position: fixed;
-    /* start slightly below the header so content underneath remains visible */
-    top: calc(76px + 8px);
+    top: 76px;
     left: 0;
     right: 0;
+
     width: 100%;
+    max-width: 100%;
+    height: calc(100dvh - 76px);
+    max-height: none;
+
+    margin: 0;
+    padding: 0.75rem 1rem 2rem;
+
     background: var(--bg-card);
-    padding: 0.25rem 0.5rem;
-    border-bottom: 1px solid var(--border-color);
+    border: none;
+    border-top: 1px solid var(--border-color);
+    border-radius: 0;
     box-shadow: var(--shadow-lg);
-    gap: 0;
-    /* limit height so the menu is compact; allow scrolling if content exceeds */
-    max-height: 60vh;
+
     overflow-y: auto;
-    border-radius: 8px;
-    margin: 0.25rem;
+    overflow-x: hidden;
+
+    gap: 0;
     z-index: 9999;
   }
-  .nav-menu > li { height: auto; width: 100%; }
-  /* tighter spacing for mobile list items */
-  .nav-link { display: block; padding: 0.5rem 0.75rem; width: 100%; font-size: 0.95rem; }
-  .nav-menu > li + li .nav-link { border-top: 1px solid rgba(6,16,61,0.06); }
-  .nav-item-dropdown { display: flex; flex-direction: column; align-items: stretch; }
-  .nav-dropdown-menu a { display: block; padding: 0.4rem 0.75rem; }
-  .nav-dropdown-menu { padding-left: 0.5rem; }
-  .mobile-toggle { display: block; }
+
+  /* Éléments principaux */
+  .nav-menu > li {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    padding: 0.85rem 0.75rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .nav-menu > li + li {
+    border-top: 1px solid rgba(6, 16, 61, 0.06);
+  }
+
+  .nav-menu > li + li .nav-link {
+    border-top: none;
+  }
+
+  /* Items avec sous-menu */
+  .nav-item-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Sous-menu mobile */
+  .nav-dropdown-menu {
+    position: static;
+
+    display: none;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 0;
+
+    margin: 0 0 0.5rem;
+    padding: 0.25rem 0 0.5rem 1rem;
+
+    background: transparent;
+    border: none;
+    border-left: 2px solid var(--cyan);
+    border-radius: 0;
+    box-shadow: none;
+
+    gap: 0;
+  }
+
+  .nav-item-dropdown.open .nav-dropdown-menu {
+    display: flex;
+  }
+
+  .nav-dropdown-menu a {
+    display: block;
+    width: 100%;
+
+    padding: 0.65rem 0.75rem;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-dropdown-menu a:hover {
+    background: var(--bg-secondary);
+  }
+
+  /* Bouton hamburger */
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+    flex: 0 0 44px;
+
+    font-size: 1.6rem;
+    line-height: 1;
+
+    border-radius: var(--radius-sm);
+  }
+
+  .mobile-toggle:hover {
+    background: var(--bg-secondary);
+  }
+
+  /* CTA dans le menu */
+  .nav-cta {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 1rem 0.75rem;
+  }
+
+  .nav-cta .btn {
+    width: 100%;
+  }
+
+  /* Contenu */
   .split-layout {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
 
-  /* On mobile, keep dropdowns collapsed by default; open on parent .open */
-  .nav-dropdown-menu {
-    position: static;
-    display: none;
-    flex-direction: column;
-    margin-top: 0.25rem;
-    padding-left: 1rem;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-  }
-  .nav-item-dropdown.open .nav-dropdown-menu {
-    display: flex;
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
