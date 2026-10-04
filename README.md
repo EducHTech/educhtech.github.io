@@ -15,6 +15,8 @@ npm run serve:dist   # sert le build localement : http://localhost:8080
 
 Node 22 ou plus récent.
 
+**Sur un autre ordinateur Windows :** cloner le dépôt, puis double-cliquer sur `demarrer.bat`. Il installe les dépendances au premier lancement et ouvre le site dans le navigateur.
+
 ## Structure
 
 ```
