@@ -12,6 +12,7 @@
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "serve:dist": "npx http-server dist/educhtech-site/browser -p 8080 -c-1",
+    "export:statique": "npm run build && node -e \"const fs=require('fs');fs.rmSync('site-statique/site',{recursive:true,force:true});fs.cpSync('dist/educhtech-site/browser','site-statique/site',{recursive:true})\"",
     "optimize:images": "node scripts/optimize-images.mjs"
   },
   "packageManager": "npm@11.6.2",

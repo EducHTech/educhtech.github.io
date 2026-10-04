@@ -7,7 +7,7 @@ import angular from 'angular-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist/**', '.angular/**', 'node_modules/**', 'coverage/**'],
+    ignores: ['dist/**', 'site-statique/**', '.angular/**', 'node_modules/**', 'coverage/**'],
   },
   {
     files: ['**/*.ts'],

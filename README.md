@@ -17,6 +17,8 @@ Node 22 ou plus récent.
 
 **Sur un autre ordinateur Windows :** cloner le dépôt, puis double-cliquer sur `demarrer.bat`. Il installe les dépendances au premier lancement et ouvre le site dans le navigateur.
 
+**Sans rien installer (Windows) :** copier le dossier `site-statique/` sur l'ordinateur et double-cliquer sur `ouvrir-site.bat`. Un petit serveur PowerShell (inclus dans Windows) sert le site pré-rendu sur http://localhost:8080. Après une modification du site, régénérer ce dossier avec `npm run export:statique`.
+
 ## Structure
 
 ```
