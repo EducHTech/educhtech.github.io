@@ -11,12 +11,20 @@
     </app-split-layout>
   </app-section>
 
-  <app-section [header]="data.ETAPES">
-    <app-card-grid [cards]="data.ETAPES_CARDS" />
+  <app-section [header]="data.PROBLEME">
+    <app-card-grid [cards]="data.PROBLEME_CARDS" />
   </app-section>
 
-  <app-section [header]="data.PROGRESSION" [alt]="true">
+  <app-section [header]="data.ETAPES" [alt]="true">
+    <app-card-grid [cards]="data.ETAPES_CARDS" [columns]="2" />
+  </app-section>
+
+  <app-section [header]="data.PROGRESSION">
     <app-card-grid [cards]="data.PROGRESSION_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.MODELE" [alt]="true">
+    <app-card-grid [cards]="data.MODELE_CARDS" />
   </app-section>
 
   <app-section [header]="data.CALL_TO_ACTION" [narrow]="true">
