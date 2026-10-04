@@ -1,0 +1,26 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-highlight);
+  background: rgba(4, 155, 219, 0.12);
+  color: var(--bleu-fonce);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+:host(.tone-rouge) {
+  background: rgba(228, 28, 35, 0.1);
+  color: #c4161c;
+  border-color: rgba(228, 28, 35, 0.35);
+}
+
+:host(.tone-indigo) {
+  background: rgba(76, 108, 240, 0.1);
+  color: #3a55c9;
+  border-color: rgba(76, 108, 240, 0.35);
+}

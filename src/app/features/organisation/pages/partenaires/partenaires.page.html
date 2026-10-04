@@ -1,0 +1,12 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [alt]="true">
+    <app-card-grid class="partners" [cards]="data.PARTNERS" [columns]="2" />
+  </app-section>
+
+  <app-section [header]="data.SOUTIEN">
+    <app-zeffy-embed [formId]="data.ZEFFY_FORM_ID" />
+    <app-action-links class="soutien-links" [links]="data.SOUTIEN_LINKS" />
+  </app-section>
+</app-page-layout>

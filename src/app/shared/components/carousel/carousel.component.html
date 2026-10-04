@@ -1,0 +1,33 @@
+<section class="carousel" aria-roledescription="carrousel" [attr.aria-label]="label()">
+  <button class="carousel-btn" type="button" aria-label="Diapositive précédente" (click)="previous()">❮</button>
+
+  <div class="carousel-track" aria-live="polite">
+    @for (slide of slides(); track slide.path; let i = $index) {
+      <div
+        class="carousel-slide"
+        role="group"
+        aria-roledescription="diapositive"
+        [attr.aria-label]="i + 1 + ' sur ' + slides().length"
+        [class.active]="i === index()"
+        [attr.aria-hidden]="i !== index()"
+      >
+        <app-image [image]="slide" [priority]="i === 0" />
+      </div>
+    }
+  </div>
+
+  <button class="carousel-btn" type="button" aria-label="Diapositive suivante" (click)="next()">❯</button>
+</section>
+
+<div class="carousel-dots">
+  @for (slide of slides(); track slide.path; let i = $index) {
+    <button
+      class="dot"
+      type="button"
+      [class.active]="i === index()"
+      [attr.aria-label]="'Afficher la diapositive ' + (i + 1)"
+      [attr.aria-current]="i === index()"
+      (click)="goTo(i)"
+    ></button>
+  }
+</div>

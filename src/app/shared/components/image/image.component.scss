@@ -1,0 +1,12 @@
+:host {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: var(--image-height, auto);
+  max-height: var(--image-max-height, none);
+  aspect-ratio: var(--image-ratio, auto);
+  object-fit: var(--image-fit, cover);
+  border-radius: var(--image-radius, 0);
+}

@@ -1,0 +1,14 @@
+<section class="container">
+  @if (header(); as h) {
+    <header class="section-header">
+      @if (h.badge) {
+        <app-badge [badge]="h.badge" />
+      }
+      <h2 class="section-title">{{ h.title }}</h2>
+      @if (h.description) {
+        <p class="section-desc">{{ h.description }}</p>
+      }
+    </header>
+  }
+  <ng-content />
+</section>

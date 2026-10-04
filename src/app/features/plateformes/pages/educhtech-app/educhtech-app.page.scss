@@ -1,0 +1,9 @@
+.capture {
+  --image-fit: contain;
+  max-width: 980px;
+  margin: 0 auto 2.5rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}

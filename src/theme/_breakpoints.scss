@@ -1,0 +1,19 @@
+/*
+ * Points de rupture partagés. Usage dans un composant :
+ *   @use 'theme/breakpoints' as bp;
+ *   @include bp.below(md) { ... }
+ */
+
+$breakpoints: (
+  xs: 480px,
+  sm: 600px,
+  md: 760px,
+  nav: 900px,
+  lg: 980px,
+);
+
+@mixin below($name) {
+  @media (max-width: map-get($breakpoints, $name)) {
+    @content;
+  }
+}

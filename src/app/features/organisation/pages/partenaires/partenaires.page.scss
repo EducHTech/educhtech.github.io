@@ -1,0 +1,12 @@
+/* Logos : affichés en entier, sur une hauteur fixe */
+.partners {
+  --card-image-ratio: auto;
+  --card-image-fit: contain;
+  --image-height: 88px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.soutien-links {
+  margin-top: 2rem;
+}

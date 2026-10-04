@@ -1,0 +1,52 @@
+@use 'theme/breakpoints' as bp;
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+
+  @include bp.below(nav) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+:host(.image-first) .media {
+  order: -1;
+}
+
+.title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin: 0.75rem 0 1rem;
+}
+
+.desc {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+
+  app-image {
+    transition: transform var(--transition-normal);
+  }
+
+  &:hover app-image {
+    transform: scale(1.03);
+  }
+}
+
+:host(.contain) .media {
+  background: var(--bg-card);
+
+  app-image {
+    --image-fit: contain;
+    --image-max-height: 420px;
+  }
+}

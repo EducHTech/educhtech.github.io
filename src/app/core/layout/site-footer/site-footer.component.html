@@ -1,0 +1,21 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <app-image class="logo" [image]="logo" />
+        <p>{{ tagline }}</p>
+      </div>
+      @for (column of columns; track column.title) {
+        <nav [attr.aria-label]="column.title">
+          <h2 class="footer-title">{{ column.title }}</h2>
+          <ul class="footer-links">
+            @for (item of column.links; track item.route) {
+              <li><a [routerLink]="item.route">{{ item.label }}</a></li>
+            }
+          </ul>
+        </nav>
+      }
+    </div>
+    <p class="footer-bottom">© {{ year }} ÉducHTech. Tous droits réservés. Conçu avec passion à Montréal.</p>
+  </div>
+</footer>

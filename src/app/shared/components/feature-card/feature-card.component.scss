@@ -1,0 +1,50 @@
+:host {
+  display: block;
+}
+
+.card {
+  height: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast);
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-highlight);
+  }
+}
+
+.card-image {
+  --image-ratio: var(--card-image-ratio, 4 / 3);
+  --image-fit: var(--card-image-fit, cover);
+  --image-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.card-icon {
+  display: inline-block;
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  color: var(--bleu-fonce);
+  margin-bottom: 0.65rem;
+}
+
+.card-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

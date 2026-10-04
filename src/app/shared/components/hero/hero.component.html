@@ -1,0 +1,14 @@
+<section class="container hero-content">
+  <ng-content />
+  <app-badge [badge]="hero().badge" />
+  <h1 class="hero-title">
+    {{ hero().title }}
+    @if (hero().highlight) {
+      <span class="text-gradient">{{ hero().highlight }}</span>
+    }
+  </h1>
+  <p class="hero-subtitle">{{ hero().subtitle }}</p>
+  @if (hero().actions; as actions) {
+    <app-action-links [links]="actions" />
+  }
+</section>

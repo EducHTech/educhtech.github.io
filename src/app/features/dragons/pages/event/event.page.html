@@ -1,0 +1,18 @@
+<app-page-layout>
+  @let c = content();
+  <app-hero [hero]="c.hero" />
+
+  <app-section [alt]="true">
+    <app-split-layout [header]="c.presentation.header" [image]="c.presentation.image">
+      <div class="prose">
+        @for (paragraph of c.presentation.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+  </app-section>
+
+  <app-section [header]="c.highlights.header">
+    <app-card-grid [cards]="c.highlights.cards" />
+  </app-section>
+</app-page-layout>

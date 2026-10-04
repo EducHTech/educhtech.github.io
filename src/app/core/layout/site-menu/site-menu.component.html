@@ -1,0 +1,37 @@
+<ion-menu menuId="site-menu" contentId="main-content" side="end" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <nav aria-label="Navigation principale (mobile)">
+      @for (item of navigation; track item.label) {
+        <ion-list lines="none">
+          @if (item.children; as children) {
+            <ion-list-header>{{ item.label }}</ion-list-header>
+            @for (child of children; track child.route) {
+              <ion-menu-toggle [autoHide]="false">
+                <ion-item class="child" [routerLink]="child.route" routerLinkActive="selected" [detail]="false">
+                  <ion-label>{{ child.label }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+            }
+          } @else {
+            <ion-menu-toggle [autoHide]="false">
+              <ion-item
+                [routerLink]="item.route"
+                routerLinkActive="selected"
+                [routerLinkActiveOptions]="{ exact: true }"
+                [detail]="false"
+              >
+                <ion-label>{{ item.label }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+          }
+        </ion-list>
+      }
+    </nav>
+  </ion-content>
+</ion-menu>

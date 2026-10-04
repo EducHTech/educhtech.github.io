@@ -1,0 +1,23 @@
+.contact-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+
+  p {
+    color: var(--text-secondary);
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}

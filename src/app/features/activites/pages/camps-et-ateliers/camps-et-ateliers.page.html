@@ -1,0 +1,19 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [header]="data.PARCOURS" [alt]="true">
+    <app-card-grid class="parcours" [cards]="data.PARCOURS_CARDS" [columns]="4" />
+  </app-section>
+
+  <app-section>
+    <app-split-layout [header]="data.CENTRE_SABLON.header" [image]="data.CENTRE_SABLON.image">
+      <app-metric-grid [metrics]="data.CENTRE_SABLON.metrics" [compact]="true" />
+    </app-split-layout>
+  </app-section>
+
+  <app-section [alt]="true">
+    <app-split-layout [header]="data.RESERVATION.header" [image]="data.RESERVATION.image">
+      <app-action-links class="reservation-links" [links]="data.RESERVATION.links" />
+    </app-split-layout>
+  </app-section>
+</app-page-layout>

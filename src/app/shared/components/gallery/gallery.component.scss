@@ -1,0 +1,42 @@
+@use 'theme/breakpoints' as bp;
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  @include bp.below(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include bp.below(xs) {
+    grid-template-columns: 1fr;
+  }
+}
+
+figure {
+  overflow: hidden;
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+app-image {
+  --image-ratio: 4 / 3;
+  transition: transform var(--transition-normal);
+}
+
+figure:hover app-image {
+  transform: scale(1.04);
+}
+
+figcaption {
+  position: relative;
+  padding: 0.8rem 1rem;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}

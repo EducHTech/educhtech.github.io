@@ -1,0 +1,13 @@
+:host {
+  --gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+/* Largeur d'une carte : 1/columns de la ligne, mais jamais moins de 260px */
+:host > ::ng-deep * {
+  flex: 0 1 calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  min-width: min(260px, 100%);
+}

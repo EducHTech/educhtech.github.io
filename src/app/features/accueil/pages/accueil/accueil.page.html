@@ -1,0 +1,19 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <div class="container metrics">
+    <app-metric-grid [metrics]="data.METRICS" />
+  </div>
+
+  <app-section [header]="data.MISSION" [alt]="true">
+    <app-card-grid [cards]="data.MISSION_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.RESULTS">
+    <app-card-grid [cards]="data.RESULT_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.CALL_TO_ACTION" [alt]="true" [narrow]="true">
+    <app-action-links [links]="data.CALL_TO_ACTION_LINKS" />
+  </app-section>
+</app-page-layout>

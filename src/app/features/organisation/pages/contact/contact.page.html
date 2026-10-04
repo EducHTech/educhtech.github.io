@@ -1,0 +1,14 @@
+<app-page-layout>
+  <app-hero [hero]="hero" />
+
+  <app-section [alt]="true">
+    <article class="contact-card">
+      <h2 class="title"><span aria-hidden="true">📧</span> Courriel</h2>
+      <p>
+        Écrivez-nous directement à
+        <a [href]="'mailto:' + email">{{ email }}</a>.
+        Nous répondons à toutes les demandes.
+      </p>
+    </article>
+  </app-section>
+</app-page-layout>

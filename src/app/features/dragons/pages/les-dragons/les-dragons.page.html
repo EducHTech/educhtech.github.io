@@ -1,0 +1,61 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" [tinted]="true">
+    <app-image class="logo-dragons" [image]="data.LOGO_DRAGONS" [priority]="true" />
+  </app-hero>
+
+  <app-section [alt]="true">
+    <app-split-layout [header]="data.ANNEE.header" [image]="data.ANNEE.image">
+      <div class="prose">
+        @for (paragraph of data.ANNEE.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+  </app-section>
+
+  <app-section [header]="data.ROBOTIQUE" [anchor]="data.ANCRES.robotique">
+    <app-card-grid [cards]="data.ROBOTIQUE_CARDS" />
+  </app-section>
+
+  <app-section [alt]="true" [anchor]="data.ANCRES.moments">
+    <app-split-layout [header]="data.ESPRIT_EQUIPE.header" [image]="data.ESPRIT_EQUIPE.image" [imageFirst]="true">
+      <div class="prose">
+        @for (paragraph of data.ESPRIT_EQUIPE.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+    <ul class="event-list" aria-label="Activités de la saison">
+      @for (event of data.ESPRIT_EQUIPE.events; track event) {
+        <li>{{ event }}</li>
+      }
+    </ul>
+  </app-section>
+
+  <app-section [header]="data.FINANCEMENT.header">
+    <app-split-layout [image]="data.FINANCEMENT.image">
+      <div class="prose">
+        @for (paragraph of data.FINANCEMENT.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+  </app-section>
+
+  <app-section [header]="data.GALERIE" [alt]="true">
+    <app-gallery [items]="data.GALERIE_ITEMS" />
+    <p class="season-closing">{{ data.MOT_DE_LA_FIN }}</p>
+  </app-section>
+
+  <app-section [header]="data.VIDEOS_HEADER">
+    <div class="video-grid">
+      @for (video of data.VIDEOS; track video.youtubeId) {
+        <article>
+          <app-embed-frame [src]="video.url" [title]="video.title" />
+          <h3 class="video-title">{{ video.title }}</h3>
+          <p class="video-text">{{ video.description }}</p>
+        </article>
+      }
+    </div>
+  </app-section>
+</app-page-layout>

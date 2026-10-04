@@ -1,0 +1,125 @@
+@use 'theme/breakpoints' as bp;
+
+// Pas d'ion-toolbar : son « contain: content » couperait les sous-menus déroulants.
+.site-header {
+  background: rgba(249, 250, 251, 0.9);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  height: var(--header-height);
+}
+
+.logo-link {
+  flex: 0 0 auto;
+}
+
+// Logo : ratio ≈ 4,2 (largeur fixe -> 44px de haut)
+.logo {
+  width: 185px;
+
+  @include bp.below(xs) {
+    width: 150px;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition-fast);
+
+  &:hover,
+  &.active {
+    color: var(--bleu-fonce);
+  }
+}
+
+.nav-group.active > .nav-link {
+  color: var(--bleu-fonce);
+}
+
+.caret {
+  font-size: 0.75rem;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: 50;
+
+  a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &:hover,
+    &.active {
+      background: var(--bg-secondary);
+      color: var(--bleu-fonce);
+    }
+  }
+}
+
+.nav-group:hover .dropdown,
+.nav-group:focus-within .dropdown,
+.nav-group.open .dropdown {
+  display: flex;
+}
+
+.mobile-toggle {
+  display: none;
+  color: var(--nuit);
+}
+
+@include bp.below(nav) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+}

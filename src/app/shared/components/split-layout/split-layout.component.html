@@ -1,0 +1,15 @@
+<div class="text">
+  @if (header(); as h) {
+    @if (h.badge) {
+      <app-badge [badge]="h.badge" />
+    }
+    <h2 class="title">{{ h.title }}</h2>
+    @if (h.description) {
+      <p class="desc">{{ h.description }}</p>
+    }
+  }
+  <ng-content />
+</div>
+<div class="media">
+  <app-image [image]="image()" />
+</div>

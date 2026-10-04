@@ -1,0 +1,22 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [alt]="true">
+    <app-split-layout [header]="data.CONCEPT.header" [image]="data.CONCEPT.image">
+      <div class="prose">
+        @for (paragraph of data.CONCEPT.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+  </app-section>
+
+  <app-section>
+    <app-split-layout [header]="data.BALADO.header" [image]="data.BALADO.image" [imageFirst]="true">
+      <!-- preload="none" : le fichier (≈ 16 Mo) n'est téléchargé qu'au clic sur Lecture -->
+      <audio controls preload="none" [src]="data.BALADO.audioSrc">
+        Votre navigateur ne permet pas la lecture audio intégrée.
+      </audio>
+    </app-split-layout>
+  </app-section>
+</app-page-layout>

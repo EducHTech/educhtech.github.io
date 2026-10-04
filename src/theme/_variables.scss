@@ -1,0 +1,106 @@
+/*
+ * Thème ÉducHTech — source unique des couleurs et des jetons de design.
+ * Palette reprise de l'ancien css/main.css (charte graphique officielle).
+ */
+
+:root {
+  /* ---- Palette de marque ---- */
+  --nuit: #06103d;
+  --rouge: #e41c23;
+  --bleu-fonce: #14447c;
+  --indigo: #4c6cf0;
+  --cyan: #049bdb;
+  --bleu-clair: #5cace4;
+  --bleu-pale: #a4ccec;
+  --blanc-casse: #f9fafb;
+
+  /* ---- Surfaces et texte ---- */
+  --bg-primary: var(--blanc-casse);
+  --bg-secondary: #eef2f8;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f4f8fd;
+
+  --border-color: rgba(6, 16, 61, 0.12);
+  --border-strong: rgba(6, 16, 61, 0.22);
+  --border-highlight: rgba(4, 155, 219, 0.45);
+
+  --text-primary: var(--nuit);
+  --text-secondary: #4a5878;
+  --text-muted: #6b7794;
+
+  /* ---- Effets ---- */
+  --shadow-sm: 0 1px 3px rgba(6, 16, 61, 0.07);
+  --shadow-lg: 0 12px 32px rgba(6, 16, 61, 0.12);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  --font-sans: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  --header-height: 76px;
+  --container-width: 1200px;
+
+  /* ---- Ionic : typographie et fonds ---- */
+  --ion-font-family: var(--font-sans);
+  --ion-background-color: var(--bg-primary);
+  --ion-background-color-rgb: 249, 250, 251;
+  --ion-text-color: var(--text-primary);
+  --ion-text-color-rgb: 6, 16, 61;
+  --ion-toolbar-background: rgba(249, 250, 251, 0.92);
+  --ion-toolbar-border-color: var(--border-color);
+  --ion-item-background: transparent;
+
+  /* ---- Ionic : couleurs nommées ---- */
+  --ion-color-primary: #14447c;
+  --ion-color-primary-rgb: 20, 68, 124;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #123c6d;
+  --ion-color-primary-tint: #2c578a;
+
+  --ion-color-secondary: #049bdb;
+  --ion-color-secondary-rgb: 4, 155, 219;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #0488c1;
+  --ion-color-secondary-tint: #1da5df;
+
+  --ion-color-tertiary: #4c6cf0;
+  --ion-color-tertiary-rgb: 76, 108, 240;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #435fd3;
+  --ion-color-tertiary-tint: #5e7bf2;
+
+  --ion-color-danger: #e41c23;
+  --ion-color-danger-rgb: 228, 28, 35;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #c9191f;
+  --ion-color-danger-tint: #e73339;
+
+  --ion-color-dark: #06103d;
+  --ion-color-dark-rgb: 6, 16, 61;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #050e36;
+  --ion-color-dark-tint: #1f2850;
+
+  --ion-color-medium: #4a5878;
+  --ion-color-medium-rgb: 74, 88, 120;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #414d6a;
+  --ion-color-medium-tint: #5c6986;
+
+  --ion-color-light: #eef2f8;
+  --ion-color-light-rgb: 238, 242, 248;
+  --ion-color-light-contrast: #06103d;
+  --ion-color-light-contrast-rgb: 6, 16, 61;
+  --ion-color-light-shade: #d1d5da;
+  --ion-color-light-tint: #f0f3f9;
+}

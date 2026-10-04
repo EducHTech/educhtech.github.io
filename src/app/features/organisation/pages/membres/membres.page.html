@@ -1,0 +1,29 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [header]="data.DIRECTION" [alt]="true">
+    <app-card-grid class="directors" [cards]="data.DIRECTORS">
+      <app-feature-card [card]="data.PRIX_JEUNESSE.card">
+        <app-embed-frame
+          class="reel"
+          [src]="data.PRIX_JEUNESSE.videoUrl"
+          [title]="data.PRIX_JEUNESSE.videoTitle"
+          ratio="320 / 560"
+          maxWidth="320px"
+        />
+      </app-feature-card>
+    </app-card-grid>
+  </app-section>
+
+  <app-section [header]="data.CONSEIL">
+    <app-card-grid [cards]="data.BOARD" />
+  </app-section>
+
+  <app-section [header]="data.MENTORAT" [alt]="true">
+    <app-card-grid [cards]="data.MENTORS" />
+  </app-section>
+
+  <app-section [header]="data.CALL_TO_ACTION" [narrow]="true">
+    <app-action-links [links]="data.CALL_TO_ACTION_LINKS" />
+  </app-section>
+</app-page-layout>

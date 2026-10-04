@@ -1,0 +1,37 @@
+@use 'theme/breakpoints' as bp;
+
+:host {
+  display: block;
+  padding: 5rem 0 4rem;
+  text-align: center;
+
+  @include bp.below(sm) {
+    padding: 3rem 0;
+  }
+}
+
+:host(.tinted) {
+  background: linear-gradient(135deg, rgba(4, 155, 219, 0.08), rgba(228, 28, 35, 0.06));
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+  max-width: 860px;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  margin: 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+app-action-links {
+  margin-top: 2.5rem;
+}

@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--nuit);
+  box-shadow: var(--shadow-lg);
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

@@ -1,0 +1,16 @@
+<article class="card">
+  <ng-content />
+  @let c = card();
+  @if (c.image) {
+    <app-image class="card-image" [image]="c.image" />
+  } @else if (c.icon) {
+    <span class="card-icon" aria-hidden="true">{{ c.icon }}</span>
+  }
+  <h3 class="card-title">{{ c.title }}</h3>
+  @if (c.subtitle) {
+    <p class="card-subtitle">{{ c.subtitle }}</p>
+  }
+  @if (c.text) {
+    <p class="card-text">{{ c.text }}</p>
+  }
+</article>

@@ -1,0 +1,52 @@
+<div class="site-header">
+  <div class="container nav-container">
+    <a routerLink="/" class="logo-link" aria-label="ÉducHTech — accueil">
+      <app-image class="logo" [image]="logo" [priority]="true" />
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <ul class="nav-menu">
+        @for (item of navigation; track item.label) {
+          @if (item.children; as children) {
+            <li
+              class="nav-group"
+              routerLinkActive="active"
+              [class.open]="openGroup() === item.label"
+              (mouseleave)="openGroup.set(null)"
+            >
+              <button
+                type="button"
+                class="nav-link"
+                [attr.aria-expanded]="openGroup() === item.label"
+                (click)="toggle(item.label)"
+              >
+                {{ item.label }} <span class="caret" aria-hidden="true">▾</span>
+              </button>
+              <ul class="dropdown">
+                @for (child of children; track child.route) {
+                  <li>
+                    <a [routerLink]="child.route" routerLinkActive="active" ariaCurrentWhenActive="page">{{ child.label }}</a>
+                  </li>
+                }
+              </ul>
+            </li>
+          } @else {
+            <li>
+              <a
+                class="nav-link"
+                [routerLink]="item.route"
+                routerLinkActive="active"
+                ariaCurrentWhenActive="page"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >{{ item.label }}</a>
+            </li>
+          }
+        }
+      </ul>
+    </nav>
+
+    <ion-buttons class="mobile-toggle">
+      <ion-menu-button menu="site-menu" aria-label="Ouvrir le menu de navigation" />
+    </ion-buttons>
+  </div>
+</div>

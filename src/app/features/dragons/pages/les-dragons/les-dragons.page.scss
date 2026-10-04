@@ -1,0 +1,60 @@
+@use 'theme/breakpoints' as bp;
+
+.logo-dragons {
+  --image-fit: contain;
+  --image-height: 132px;
+  width: min(360px, 80vw);
+  margin: 0 auto 1.5rem;
+}
+
+.event-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 3rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.season-closing {
+  max-width: 760px;
+  margin: 2.5rem auto 0;
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+
+  @include bp.below(md) {
+    grid-template-columns: 1fr;
+  }
+
+  app-embed-frame {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.video-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.video-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}

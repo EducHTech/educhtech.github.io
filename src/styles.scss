@@ -1,0 +1,16 @@
+/*
+ * Styles globaux du site ÉducHTech.
+ * Les styles propres à un composant vivent dans son fichier .scss ;
+ * ici on ne garde que Ionic, le thème et quelques utilitaires partagés.
+ */
+
+/* Ionic : styles de base requis */
+@use '@ionic/angular/css/core.css';
+@use '@ionic/angular/css/normalize.css';
+@use '@ionic/angular/css/structure.css';
+@use '@ionic/angular/css/typography.css';
+@use '@ionic/angular/css/display.css';
+
+/* Thème ÉducHTech (mode clair seulement, comme le site d'origine) */
+@use 'theme/variables';
+@use 'theme/utilities';

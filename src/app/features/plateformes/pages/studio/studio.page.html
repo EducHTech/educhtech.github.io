@@ -1,0 +1,25 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [alt]="true" anchor="essentiel">
+    <app-split-layout [header]="data.ESSENTIEL.header" [image]="data.ESSENTIEL.image" fit="contain">
+      <div class="prose">
+        @for (paragraph of data.ESSENTIEL.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+    </app-split-layout>
+  </app-section>
+
+  <app-section [header]="data.ETAPES">
+    <app-card-grid [cards]="data.ETAPES_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.PROGRESSION" [alt]="true">
+    <app-card-grid [cards]="data.PROGRESSION_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.CALL_TO_ACTION" [narrow]="true">
+    <app-action-links [links]="data.CALL_TO_ACTION_LINKS" />
+  </app-section>
+</app-page-layout>

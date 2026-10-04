@@ -1,0 +1,18 @@
+<app-page-layout>
+  <app-hero [hero]="data.HERO" />
+
+  <app-section [header]="data.PLATEFORME" [alt]="true" anchor="essentiel">
+    <div class="capture">
+      <app-image [image]="data.CAPTURE" />
+    </div>
+    <app-card-grid [cards]="data.PLATEFORME_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.SUIVI">
+    <app-card-grid [cards]="data.SUIVI_CARDS" />
+  </app-section>
+
+  <app-section [header]="data.CALL_TO_ACTION" [alt]="true" [narrow]="true">
+    <app-action-links [links]="data.CALL_TO_ACTION_LINKS" />
+  </app-section>
+</app-page-layout>

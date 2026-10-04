@@ -1,0 +1,16 @@
+@for (link of links(); track link.label) {
+  @if (link.href) {
+    <a class="btn" [class]="'btn-' + (link.variant ?? 'primary')" [href]="link.href" target="_blank" rel="noopener">
+      {{ link.label }}
+    </a>
+  } @else {
+    <a
+      class="btn"
+      [class]="'btn-' + (link.variant ?? 'primary')"
+      [routerLink]="link.route ?? []"
+      [fragment]="link.fragment"
+    >
+      {{ link.label }}
+    </a>
+  }
+}

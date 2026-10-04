@@ -1,0 +1,8 @@
+<ul class="metrics">
+  @for (metric of metrics(); track metric.label) {
+    <li class="metric-card">
+      <span class="metric-number">{{ metric.value }}</span>
+      <span class="metric-label">{{ metric.label }}</span>
+    </li>
+  }
+</ul>
