@@ -2,6 +2,22 @@
  * ÉducHTech - Core Frontend Scripts
  */
 document.addEventListener('DOMContentLoaded', () => {
+  const campaignPopup = document.getElementById('bosapin-popup');
+  if (campaignPopup instanceof HTMLDialogElement) {
+    const closeButton = campaignPopup.querySelector('.campaign-popup-close');
+
+    campaignPopup.showModal();
+    closeButton.addEventListener('click', () => campaignPopup.close());
+    campaignPopup.addEventListener('click', (event) => {
+      if (event.target === campaignPopup) {
+        campaignPopup.close();
+      }
+    });
+    campaignPopup.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => campaignPopup.close());
+    });
+  }
+
   const toggleBtn = document.querySelector('.mobile-toggle');
   const navMenu = document.querySelector('.nav-menu');
 

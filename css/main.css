@@ -372,6 +372,70 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid var(--border-color);
 }
 
+.dragons-hero-video {
+  max-width: 760px;
+  margin: 0 auto 1.5rem;
+}
+
+.campaign-popup {
+  position: fixed;
+  width: min(520px, calc(100% - 2rem));
+  max-width: none;
+  max-height: calc(100% - 2rem);
+  margin: auto;
+  padding: 2rem;
+  overflow: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.campaign-popup::backdrop {
+  background: rgba(6, 16, 61, 0.68);
+}
+
+.campaign-popup-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.campaign-popup-title {
+  margin: 0 1.5rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.campaign-popup-text {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.campaign-popup-image-link {
+  display: block;
+}
+
+.campaign-popup-image-link img {
+  display: block;
+  width: 100%;
+  max-height: 55vh;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+}
+
+.campaign-popup-cta {
+  margin-top: 1rem;
+}
+
 .event-list {
   display: flex;
   justify-content: center;
